@@ -34,7 +34,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/cw-users')
+mongoose.connect('mongodb://127.0.0.1:27017/cw-users')
   .then(() => console.log("Connection successful!"))
   .catch((err) => console.error(err));
 
